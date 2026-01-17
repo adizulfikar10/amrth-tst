@@ -4,7 +4,9 @@
   "type": "module",
   "scripts": {
     "build": "react-router build",
-    "dev": "react-router dev",
+    "dev": "concurrently \"npm run server:admin\" \"npm run server:ops\" \"react-router dev\"",
+    "server:admin": "json-server server/admin-db.json --port 3001",
+    "server:ops": "json-server server/ops-db.json --port 3002",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
     "test": "vitest"
@@ -26,7 +28,9 @@
     "@types/node": "^22",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
+    "concurrently": "^9.2.1",
     "jsdom": "^27.4.0",
+    "json-server": "^1.0.0-beta.3",
     "typescript": "^5.9.2",
     "vite": "^7.1.7",
     "vite-tsconfig-paths": "^5.1.4",
