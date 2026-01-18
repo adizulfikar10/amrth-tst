@@ -1,9 +1,12 @@
 import type { BasicInfo, DetailInfo, Employee } from "~/types/employee";
 
 // @ts-ignore
-const isVercel = import.meta.env?.VERCEL;
-
 const getEnv = (key: string) => {
+  // @ts-ignore
+  if (import.meta.env && import.meta.env[key]) {
+    // @ts-ignore
+    return import.meta.env[key];
+  }
   if (typeof process !== "undefined" && process.env) {
     return process.env[key];
   }
@@ -11,9 +14,11 @@ const getEnv = (key: string) => {
 };
 
 const BASIC_INFO_API =
-  getEnv("BASIC_INFO_API_URL") || (isVercel ? "/api" : "http://localhost:4001");
+  getEnv("BASIC_INFO_API_URL") ||
+  "http://localhost:4001";
 const DETAILS_API =
-  getEnv("DETAILS_API_URL") || (isVercel ? "/api" : "http://localhost:4002");
+  getEnv("DETAILS_API_URL") ||
+  "http://localhost:4002";
 
 
 export async function getEmployees(

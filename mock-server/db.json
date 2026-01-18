@@ -1,0 +1,374 @@
+{
+  "departments": [
+    {
+      "id": "1",
+      "name": "Lending"
+    },
+    {
+      "id": "2",
+      "name": "Funding"
+    },
+    {
+      "id": "3",
+      "name": "Operations"
+    },
+    {
+      "id": "4",
+      "name": "Engineering"
+    }
+  ],
+  "basicInfo": [
+    {
+      "id": "LEN-001",
+      "fullName": "Employee 1",
+      "email": "employee1@amartha.com",
+      "department": "Lending",
+      "role": "Admin",
+      "employeeId": "LEN-001"
+    },
+    {
+      "id": "FUN-002",
+      "fullName": "Employee 2",
+      "email": "employee2@amartha.com",
+      "department": "Funding",
+      "role": "Ops",
+      "employeeId": "FUN-002"
+    },
+    {
+      "id": "OPE-003",
+      "fullName": "Employee 3",
+      "email": "employee3@amartha.com",
+      "department": "Operations",
+      "role": "Admin",
+      "employeeId": "OPE-003"
+    },
+    {
+      "id": "FUN-004",
+      "fullName": "Employee 4",
+      "email": "employee4@amartha.com",
+      "department": "Funding",
+      "role": "Admin",
+      "employeeId": "FUN-004"
+    },
+    {
+      "id": "OPE-005",
+      "fullName": "Employee 5",
+      "email": "employee5@amartha.com",
+      "department": "Operations",
+      "role": "Admin",
+      "employeeId": "OPE-005"
+    },
+    {
+      "id": "OPE-006",
+      "fullName": "Employee 6",
+      "email": "employee6@amartha.com",
+      "department": "Operations",
+      "role": "Admin",
+      "employeeId": "OPE-006"
+    },
+    {
+      "id": "ENG-007",
+      "fullName": "Employee 7",
+      "email": "employee7@amartha.com",
+      "department": "Engineering",
+      "role": "Ops",
+      "employeeId": "ENG-007"
+    },
+    {
+      "id": "LEN-008",
+      "fullName": "Employee 8",
+      "email": "employee8@amartha.com",
+      "department": "Lending",
+      "role": "Admin",
+      "employeeId": "LEN-008"
+    },
+    {
+      "id": "ENG-009",
+      "fullName": "Employee 9",
+      "email": "employee9@amartha.com",
+      "department": "Engineering",
+      "role": "Admin",
+      "employeeId": "ENG-009"
+    },
+    {
+      "id": "LEN-010",
+      "fullName": "Employee 10",
+      "email": "employee10@amartha.com",
+      "department": "Lending",
+      "role": "Ops",
+      "employeeId": "LEN-010"
+    },
+    {
+      "id": "LEN-011",
+      "fullName": "Employee 11",
+      "email": "employee11@amartha.com",
+      "department": "Lending",
+      "role": "Admin",
+      "employeeId": "LEN-011"
+    },
+    {
+      "id": "OPE-012",
+      "fullName": "Employee 12",
+      "email": "employee12@amartha.com",
+      "department": "Operations",
+      "role": "Admin",
+      "employeeId": "OPE-012"
+    },
+    {
+      "id": "ENG-013",
+      "fullName": "Employee 13",
+      "email": "employee13@amartha.com",
+      "department": "Engineering",
+      "role": "Ops",
+      "employeeId": "ENG-013"
+    },
+    {
+      "id": "OPE-014",
+      "fullName": "Employee 14",
+      "email": "employee14@amartha.com",
+      "department": "Operations",
+      "role": "Ops",
+      "employeeId": "OPE-014"
+    },
+    {
+      "id": "LEN-015",
+      "fullName": "Employee 15",
+      "email": "employee15@amartha.com",
+      "department": "Lending",
+      "role": "Admin",
+      "employeeId": "LEN-015"
+    },
+    {
+      "id": "OPE-016",
+      "fullName": "Employee 16",
+      "email": "employee16@amartha.com",
+      "department": "Operations",
+      "role": "Ops",
+      "employeeId": "OPE-016"
+    },
+    {
+      "id": "LEN-017",
+      "fullName": "Employee 17",
+      "email": "employee17@amartha.com",
+      "department": "Lending",
+      "role": "Ops",
+      "employeeId": "LEN-017"
+    },
+    {
+      "id": "FUN-018",
+      "fullName": "Employee 18",
+      "email": "employee18@amartha.com",
+      "department": "Funding",
+      "role": "Admin",
+      "employeeId": "FUN-018"
+    },
+    {
+      "id": "ENG-019",
+      "fullName": "Employee 19",
+      "email": "employee19@amartha.com",
+      "department": "Engineering",
+      "role": "Ops",
+      "employeeId": "ENG-019"
+    },
+    {
+      "id": "LEN-020",
+      "fullName": "Employee 20",
+      "email": "employee20@amartha.com",
+      "department": "Lending",
+      "role": "Admin",
+      "employeeId": "LEN-020"
+    },
+    {
+      "fullName": "Budi Sudarsono",
+      "email": "superadmin@gmail.com",
+      "department": "Engineering",
+      "role": "Ops",
+      "employeeId": "ENG-005",
+      "id": "ENG-005"
+    }
+  ],
+  "locations": [
+    {
+      "id": "1",
+      "name": "Jakarta"
+    },
+    {
+      "id": "2",
+      "name": "Depok"
+    },
+    {
+      "id": "3",
+      "name": "Surabaya"
+    }
+  ],
+  "details": [
+    {
+      "id": "e4ttg9sjj",
+      "employeeId": "LEN-001",
+      "photo": "",
+      "employmentType": "Contract",
+      "location": "Depok",
+      "notes": "Notes for employee 1"
+    },
+    {
+      "id": "2c4ws86oi",
+      "employeeId": "FUN-002",
+      "photo": "",
+      "employmentType": "Intern",
+      "location": "Surabaya",
+      "notes": "Notes for employee 2"
+    },
+    {
+      "id": "f48oi6f7e",
+      "employeeId": "OPE-003",
+      "photo": "",
+      "employmentType": "Full-time",
+      "location": "Jakarta",
+      "notes": "Notes for employee 3"
+    },
+    {
+      "id": "4mxy25gvj",
+      "employeeId": "FUN-004",
+      "photo": "",
+      "employmentType": "Full-time",
+      "location": "Surabaya",
+      "notes": "Notes for employee 4"
+    },
+    {
+      "id": "lwrbd6v69",
+      "employeeId": "OPE-005",
+      "photo": "",
+      "employmentType": "Contract",
+      "location": "Surabaya",
+      "notes": "Notes for employee 5"
+    },
+    {
+      "id": "d387sallx",
+      "employeeId": "OPE-006",
+      "photo": "",
+      "employmentType": "Part-time",
+      "location": "Surabaya",
+      "notes": "Notes for employee 6"
+    },
+    {
+      "id": "2wd50yxqi",
+      "employeeId": "ENG-007",
+      "photo": "",
+      "employmentType": "Part-time",
+      "location": "Surabaya",
+      "notes": "Notes for employee 7"
+    },
+    {
+      "id": "bcnodqg5j",
+      "employeeId": "LEN-008",
+      "photo": "",
+      "employmentType": "Full-time",
+      "location": "Jakarta",
+      "notes": "Notes for employee 8"
+    },
+    {
+      "id": "cwey7p67i",
+      "employeeId": "ENG-009",
+      "photo": "",
+      "employmentType": "Intern",
+      "location": "Jakarta",
+      "notes": "Notes for employee 9"
+    },
+    {
+      "id": "8txw34i0c",
+      "employeeId": "LEN-010",
+      "photo": "",
+      "employmentType": "Contract",
+      "location": "Surabaya",
+      "notes": "Notes for employee 10"
+    },
+    {
+      "id": "pecl42day",
+      "employeeId": "LEN-011",
+      "photo": "",
+      "employmentType": "Intern",
+      "location": "Surabaya",
+      "notes": "Notes for employee 11"
+    },
+    {
+      "id": "zfayn625s",
+      "employeeId": "OPE-012",
+      "photo": "",
+      "employmentType": "Contract",
+      "location": "Surabaya",
+      "notes": "Notes for employee 12"
+    },
+    {
+      "id": "0ydz5irej",
+      "employeeId": "ENG-013",
+      "photo": "",
+      "employmentType": "Intern",
+      "location": "Jakarta",
+      "notes": "Notes for employee 13"
+    },
+    {
+      "id": "vsdvdcqxi",
+      "employeeId": "OPE-014",
+      "photo": "",
+      "employmentType": "Intern",
+      "location": "Depok",
+      "notes": "Notes for employee 14"
+    },
+    {
+      "id": "dip0mj4j1",
+      "employeeId": "LEN-015",
+      "photo": "",
+      "employmentType": "Contract",
+      "location": "Depok",
+      "notes": "Notes for employee 15"
+    },
+    {
+      "id": "3in8lipau",
+      "employeeId": "OPE-016",
+      "photo": "",
+      "employmentType": "Intern",
+      "location": "Jakarta",
+      "notes": "Notes for employee 16"
+    },
+    {
+      "id": "0ssjoc1w2",
+      "employeeId": "LEN-017",
+      "photo": "",
+      "employmentType": "Intern",
+      "location": "Jakarta",
+      "notes": "Notes for employee 17"
+    },
+    {
+      "id": "hzarug49l",
+      "employeeId": "FUN-018",
+      "photo": "",
+      "employmentType": "Contract",
+      "location": "Jakarta",
+      "notes": "Notes for employee 18"
+    },
+    {
+      "id": "9h0f2oczq",
+      "employeeId": "ENG-019",
+      "photo": "",
+      "employmentType": "Intern",
+      "location": "Surabaya",
+      "notes": "Notes for employee 19"
+    },
+    {
+      "id": "1vjqm5s4k",
+      "employeeId": "LEN-020",
+      "photo": "",
+      "employmentType": "Part-time",
+      "location": "Depok",
+      "notes": "Notes for employee 20"
+    },
+    {
+      "employeeId": "ENG-005",
+      "photo": "",
+      "employmentType": "Part-time",
+      "location": "Jakarta",
+      "notes": "notes",
+      "id": "mxW26VB"
+    }
+  ]
+}
