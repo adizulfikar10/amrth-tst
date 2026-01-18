@@ -36,8 +36,8 @@ export function WizardStep2({
       )}
 
       <div className="form-group">
-        <label>Photo</label>
-        <input type="file" accept="image/*" onChange={handlePhotoUpload} />
+        <label htmlFor="photo">Photo</label>
+        <input id="photo" type="file" accept="image/*" onChange={handlePhotoUpload} />
         {formData.photo && (
           <Avatar
             src={formData.photo}
@@ -48,8 +48,9 @@ export function WizardStep2({
       </div>
 
       <div className="form-group">
-        <label>Employment Type</label>
+        <label htmlFor="employmentType">Employment Type</label>
         <select
+          id="employmentType"
           value={formData.employmentType}
           onChange={(e) =>
             setFormData({
@@ -68,8 +69,9 @@ export function WizardStep2({
       </div>
 
       <div className="form-group">
-        <label>Office Location</label>
+        <label htmlFor="location">Office Location</label>
         <input
+          id="location"
           type="text"
           value={formData.location}
           onChange={(e) => {
@@ -86,8 +88,9 @@ export function WizardStep2({
       </div>
 
       <div className="form-group">
-        <label>Notes</label>
+        <label htmlFor="notes">Notes</label>
         <textarea
+          id="notes"
           value={formData.notes}
           onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
         />

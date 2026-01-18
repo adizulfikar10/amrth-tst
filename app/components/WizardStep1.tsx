@@ -26,8 +26,9 @@ export function WizardStep1({
       <h2>Step 1: Basic Info</h2>
 
       <div className="form-group">
-        <label>Full Name</label>
+        <label htmlFor="fullName">Full Name</label>
         <input
+          id="fullName"
           type="text"
           value={formData.fullName}
           onChange={(e) =>
@@ -37,8 +38,9 @@ export function WizardStep1({
       </div>
 
       <div className="form-group">
-        <label>Email</label>
+        <label htmlFor="email">Email</label>
         <input
+          id="email"
           type="email"
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -52,8 +54,9 @@ export function WizardStep1({
       </div>
 
       <div className="form-group">
-        <label>Department</label>
+        <label htmlFor="department">Department</label>
         <input
+          id="department"
           type="text"
           value={formData.department}
           onChange={(e) => {
@@ -74,8 +77,9 @@ export function WizardStep1({
       </div>
 
       <div className="form-group">
-        <label>Role</label>
+        <label htmlFor="role">Role</label>
         <select
+          id="role"
           value={formData.jobRole}
           onChange={(e) =>
             setFormData({
