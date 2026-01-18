@@ -1,0 +1,125 @@
+{
+  "buildManifest": {
+    "serverBundles": {
+      "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0": {
+        "id": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+        "file": "build/server/nodejs_eyJydW50aW1lIjoibm9kZWpzIn0/index.js",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    },
+    "routeIdToServerBundleId": {
+      "routes/home": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/wizard": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/employees": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0"
+    },
+    "routes": {
+      "root": {
+        "id": "root",
+        "file": "app/root.tsx",
+        "path": "",
+        "config": {}
+      },
+      "routes/home": {
+        "id": "routes/home",
+        "parentId": "root",
+        "file": "app/routes/home.tsx",
+        "index": true,
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/wizard": {
+        "id": "routes/wizard",
+        "parentId": "root",
+        "file": "app/routes/wizard.tsx",
+        "path": "wizard",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/employees": {
+        "id": "routes/employees",
+        "parentId": "root",
+        "file": "app/routes/employees.tsx",
+        "path": "employees",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    }
+  },
+  "reactRouterConfig": {
+    "appDirectory": "/Users/adizulfikar/Project/learning/amartha/app",
+    "basename": "/",
+    "buildDirectory": "/Users/adizulfikar/Project/learning/amartha/build",
+    "future": {
+      "unstable_optimizeDeps": false,
+      "unstable_subResourceIntegrity": false,
+      "unstable_trailingSlashAwareDataRequests": false,
+      "v8_middleware": false,
+      "v8_splitRouteModules": false,
+      "v8_viteEnvironmentApi": false
+    },
+    "routes": {
+      "root": {
+        "id": "root",
+        "file": "root.tsx",
+        "path": ""
+      },
+      "routes/home": {
+        "id": "routes/home",
+        "parentId": "root",
+        "file": "routes/home.tsx",
+        "index": true
+      },
+      "routes/wizard": {
+        "id": "routes/wizard",
+        "parentId": "root",
+        "file": "routes/wizard.tsx",
+        "path": "wizard"
+      },
+      "routes/employees": {
+        "id": "routes/employees",
+        "parentId": "root",
+        "file": "routes/employees.tsx",
+        "path": "employees"
+      }
+    },
+    "routeDiscovery": {
+      "mode": "lazy",
+      "manifestPath": "/__manifest"
+    },
+    "serverBuildFile": "index.js",
+    "serverModuleFormat": "esm",
+    "ssr": true,
+    "allowedActionOrigins": false,
+    "unstable_routeConfig": [
+      {
+        "id": "root",
+        "path": "",
+        "file": "root.tsx",
+        "children": [
+          {
+            "file": "routes/home.tsx",
+            "index": true
+          },
+          {
+            "file": "routes/wizard.tsx",
+            "path": "wizard"
+          },
+          {
+            "file": "routes/employees.tsx",
+            "path": "employees"
+          }
+        ]
+      }
+    ]
+  },
+  "viteConfig": {
+    "build": {
+      "assetsDir": "assets"
+    }
+  }
+}

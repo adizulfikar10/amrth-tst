@@ -111,8 +111,23 @@ export function useWizard() {
 
     try {
       const existing = await getBasicInfoByDepartment(deptName);
-      const count = existing.length;
-      const seq = (count + 1).toString().padStart(3, "0");
+
+      let maxSeq = 0;
+      if (Array.isArray(existing)) {
+        existing.forEach((emp: any) => {
+          if (emp.employeeId && emp.employeeId.startsWith(prefix + "-")) {
+            const parts = emp.employeeId.split("-");
+            if (parts.length === 2) {
+              const seq = parseInt(parts[1], 10);
+              if (!isNaN(seq) && seq > maxSeq) {
+                maxSeq = seq;
+              }
+            }
+          }
+        });
+      }
+
+      const seq = (maxSeq + 1).toString().padStart(3, "0");
       const newId = `${prefix}-${seq}`;
       setFormData((prev) => ({ ...prev, employeeId: newId }));
     } catch (e) {
