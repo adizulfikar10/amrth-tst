@@ -1,0 +1,178 @@
+{
+  "locations": [
+    {
+      "id": "1",
+      "name": "Jakarta"
+    },
+    {
+      "id": "2",
+      "name": "Depok"
+    },
+    {
+      "id": "3",
+      "name": "Surabaya"
+    }
+  ],
+  "details": [
+    {
+      "id": "e4ttg9sjj",
+      "employeeId": "LEN-001",
+      "photo": "",
+      "employmentType": "Contract",
+      "location": "Depok",
+      "notes": "Notes for employee 1"
+    },
+    {
+      "id": "2c4ws86oi",
+      "employeeId": "FUN-002",
+      "photo": "",
+      "employmentType": "Intern",
+      "location": "Surabaya",
+      "notes": "Notes for employee 2"
+    },
+    {
+      "id": "f48oi6f7e",
+      "employeeId": "OPE-003",
+      "photo": "",
+      "employmentType": "Full-time",
+      "location": "Jakarta",
+      "notes": "Notes for employee 3"
+    },
+    {
+      "id": "4mxy25gvj",
+      "employeeId": "FUN-004",
+      "photo": "",
+      "employmentType": "Full-time",
+      "location": "Surabaya",
+      "notes": "Notes for employee 4"
+    },
+    {
+      "id": "lwrbd6v69",
+      "employeeId": "OPE-005",
+      "photo": "",
+      "employmentType": "Contract",
+      "location": "Surabaya",
+      "notes": "Notes for employee 5"
+    },
+    {
+      "id": "d387sallx",
+      "employeeId": "OPE-006",
+      "photo": "",
+      "employmentType": "Part-time",
+      "location": "Surabaya",
+      "notes": "Notes for employee 6"
+    },
+    {
+      "id": "2wd50yxqi",
+      "employeeId": "ENG-007",
+      "photo": "",
+      "employmentType": "Part-time",
+      "location": "Surabaya",
+      "notes": "Notes for employee 7"
+    },
+    {
+      "id": "bcnodqg5j",
+      "employeeId": "LEN-008",
+      "photo": "",
+      "employmentType": "Full-time",
+      "location": "Jakarta",
+      "notes": "Notes for employee 8"
+    },
+    {
+      "id": "cwey7p67i",
+      "employeeId": "ENG-009",
+      "photo": "",
+      "employmentType": "Intern",
+      "location": "Jakarta",
+      "notes": "Notes for employee 9"
+    },
+    {
+      "id": "8txw34i0c",
+      "employeeId": "LEN-010",
+      "photo": "",
+      "employmentType": "Contract",
+      "location": "Surabaya",
+      "notes": "Notes for employee 10"
+    },
+    {
+      "id": "pecl42day",
+      "employeeId": "LEN-011",
+      "photo": "",
+      "employmentType": "Intern",
+      "location": "Surabaya",
+      "notes": "Notes for employee 11"
+    },
+    {
+      "id": "zfayn625s",
+      "employeeId": "OPE-012",
+      "photo": "",
+      "employmentType": "Contract",
+      "location": "Surabaya",
+      "notes": "Notes for employee 12"
+    },
+    {
+      "id": "0ydz5irej",
+      "employeeId": "ENG-013",
+      "photo": "",
+      "employmentType": "Intern",
+      "location": "Jakarta",
+      "notes": "Notes for employee 13"
+    },
+    {
+      "id": "vsdvdcqxi",
+      "employeeId": "OPE-014",
+      "photo": "",
+      "employmentType": "Intern",
+      "location": "Depok",
+      "notes": "Notes for employee 14"
+    },
+    {
+      "id": "dip0mj4j1",
+      "employeeId": "LEN-015",
+      "photo": "",
+      "employmentType": "Contract",
+      "location": "Depok",
+      "notes": "Notes for employee 15"
+    },
+    {
+      "id": "3in8lipau",
+      "employeeId": "OPE-016",
+      "photo": "",
+      "employmentType": "Intern",
+      "location": "Jakarta",
+      "notes": "Notes for employee 16"
+    },
+    {
+      "id": "0ssjoc1w2",
+      "employeeId": "LEN-017",
+      "photo": "",
+      "employmentType": "Intern",
+      "location": "Jakarta",
+      "notes": "Notes for employee 17"
+    },
+    {
+      "id": "hzarug49l",
+      "employeeId": "FUN-018",
+      "photo": "",
+      "employmentType": "Contract",
+      "location": "Jakarta",
+      "notes": "Notes for employee 18"
+    },
+    {
+      "id": "9h0f2oczq",
+      "employeeId": "ENG-019",
+      "photo": "",
+      "employmentType": "Intern",
+      "location": "Surabaya",
+      "notes": "Notes for employee 19"
+    },
+    {
+      "id": "1vjqm5s4k",
+      "employeeId": "LEN-020",
+      "photo": "",
+      "employmentType": "Part-time",
+      "location": "Depok",
+      "notes": "Notes for employee 20"
+    }
+  ]
+}

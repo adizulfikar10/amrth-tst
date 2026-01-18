@@ -1,0 +1,182 @@
+{
+  "departments": [
+    {
+      "id": "1",
+      "name": "Lending"
+    },
+    {
+      "id": "2",
+      "name": "Funding"
+    },
+    {
+      "id": "3",
+      "name": "Operations"
+    },
+    {
+      "id": "4",
+      "name": "Engineering"
+    }
+  ],
+  "basicInfo": [
+    {
+      "id": "LEN-001",
+      "fullName": "Employee 1",
+      "email": "employee1@amartha.com",
+      "department": "Lending",
+      "role": "Admin",
+      "employeeId": "LEN-001"
+    },
+    {
+      "id": "FUN-002",
+      "fullName": "Employee 2",
+      "email": "employee2@amartha.com",
+      "department": "Funding",
+      "role": "Ops",
+      "employeeId": "FUN-002"
+    },
+    {
+      "id": "OPE-003",
+      "fullName": "Employee 3",
+      "email": "employee3@amartha.com",
+      "department": "Operations",
+      "role": "Admin",
+      "employeeId": "OPE-003"
+    },
+    {
+      "id": "FUN-004",
+      "fullName": "Employee 4",
+      "email": "employee4@amartha.com",
+      "department": "Funding",
+      "role": "Admin",
+      "employeeId": "FUN-004"
+    },
+    {
+      "id": "OPE-005",
+      "fullName": "Employee 5",
+      "email": "employee5@amartha.com",
+      "department": "Operations",
+      "role": "Admin",
+      "employeeId": "OPE-005"
+    },
+    {
+      "id": "OPE-006",
+      "fullName": "Employee 6",
+      "email": "employee6@amartha.com",
+      "department": "Operations",
+      "role": "Admin",
+      "employeeId": "OPE-006"
+    },
+    {
+      "id": "ENG-007",
+      "fullName": "Employee 7",
+      "email": "employee7@amartha.com",
+      "department": "Engineering",
+      "role": "Ops",
+      "employeeId": "ENG-007"
+    },
+    {
+      "id": "LEN-008",
+      "fullName": "Employee 8",
+      "email": "employee8@amartha.com",
+      "department": "Lending",
+      "role": "Admin",
+      "employeeId": "LEN-008"
+    },
+    {
+      "id": "ENG-009",
+      "fullName": "Employee 9",
+      "email": "employee9@amartha.com",
+      "department": "Engineering",
+      "role": "Admin",
+      "employeeId": "ENG-009"
+    },
+    {
+      "id": "LEN-010",
+      "fullName": "Employee 10",
+      "email": "employee10@amartha.com",
+      "department": "Lending",
+      "role": "Ops",
+      "employeeId": "LEN-010"
+    },
+    {
+      "id": "LEN-011",
+      "fullName": "Employee 11",
+      "email": "employee11@amartha.com",
+      "department": "Lending",
+      "role": "Admin",
+      "employeeId": "LEN-011"
+    },
+    {
+      "id": "OPE-012",
+      "fullName": "Employee 12",
+      "email": "employee12@amartha.com",
+      "department": "Operations",
+      "role": "Admin",
+      "employeeId": "OPE-012"
+    },
+    {
+      "id": "ENG-013",
+      "fullName": "Employee 13",
+      "email": "employee13@amartha.com",
+      "department": "Engineering",
+      "role": "Ops",
+      "employeeId": "ENG-013"
+    },
+    {
+      "id": "OPE-014",
+      "fullName": "Employee 14",
+      "email": "employee14@amartha.com",
+      "department": "Operations",
+      "role": "Ops",
+      "employeeId": "OPE-014"
+    },
+    {
+      "id": "LEN-015",
+      "fullName": "Employee 15",
+      "email": "employee15@amartha.com",
+      "department": "Lending",
+      "role": "Admin",
+      "employeeId": "LEN-015"
+    },
+    {
+      "id": "OPE-016",
+      "fullName": "Employee 16",
+      "email": "employee16@amartha.com",
+      "department": "Operations",
+      "role": "Ops",
+      "employeeId": "OPE-016"
+    },
+    {
+      "id": "LEN-017",
+      "fullName": "Employee 17",
+      "email": "employee17@amartha.com",
+      "department": "Lending",
+      "role": "Ops",
+      "employeeId": "LEN-017"
+    },
+    {
+      "id": "FUN-018",
+      "fullName": "Employee 18",
+      "email": "employee18@amartha.com",
+      "department": "Funding",
+      "role": "Admin",
+      "employeeId": "FUN-018"
+    },
+    {
+      "id": "ENG-019",
+      "fullName": "Employee 19",
+      "email": "employee19@amartha.com",
+      "department": "Engineering",
+      "role": "Ops",
+      "employeeId": "ENG-019"
+    },
+    {
+      "id": "LEN-020",
+      "fullName": "Employee 20",
+      "email": "employee20@amartha.com",
+      "department": "Lending",
+      "role": "Admin",
+      "employeeId": "LEN-020"
+    }
+  ]
+}

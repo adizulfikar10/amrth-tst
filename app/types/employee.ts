@@ -1,13 +1,21 @@
-export interface Employee {
+export interface BasicInfo {
   id: string;
-  name: string;
-  role: 'Admin' | 'Ops';
-  status: 'Active' | 'Inactive';
-  email?: string; // Optional extra field
-  avatar?: string; // Base64 image
+  employeeId: string;
+  fullName: string;
+  email: string;
+  department: string;
+  role: string;
 }
 
-export interface EmployeeResponse {
-  employees: Employee[];
-  total: number;
+export interface DetailInfo {
+  id: string;
+  employeeId: string;
+  photo: string;
+  employmentType: string;
+  location: string;
+  notes: string;
+}
+
+export interface Employee extends Partial<BasicInfo>, Partial<DetailInfo> {
+  employeeId: string;
 }

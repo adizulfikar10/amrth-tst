@@ -4,9 +4,9 @@
   "type": "module",
   "scripts": {
     "build": "react-router build",
-    "dev": "concurrently \"npm run server:admin\" \"npm run server:ops\" \"react-router dev\"",
-    "server:admin": "json-server server/admin-db.json --port 3001",
-    "server:ops": "json-server server/ops-db.json --port 3002",
+    "dev": "concurrently \"npm run server:step1\" \"npm run server:step2\" \"react-router dev\"",
+    "server:step1": "json-server server/db-step1.json --port 4001",
+    "server:step2": "json-server server/db-step2.json --port 4002",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
     "test": "vitest"
