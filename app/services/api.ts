@@ -1,17 +1,9 @@
+import type { PaginatedResponse } from "~/types/api";
 import type { BasicInfo, DetailInfo, Employee } from "~/types/employee";
 
 const BASIC_INFO_API = "http://localhost:4001";
 const DETAILS_API = "http://localhost:4002";
 
-interface PaginatedResponse<T> {
-  first: number;
-  prev: number | null;
-  next: number | null;
-  last: number;
-  pages: number;
-  items: number;
-  data: T[];
-}
 
 export async function getEmployees(
   page: number = 1,
@@ -58,4 +50,46 @@ export async function getEmployees(
     employees: Array.from(merged.values()),
     total,
   };
+}
+
+export async function getDepartments(query: string) {
+  const res = await fetch(`${BASIC_INFO_API}/departments?name_like=${query}`);
+  if (!res.ok) throw new Error("Failed to fetch departments");
+  return res.json();
+}
+
+export async function getLocations(query: string) {
+  const res = await fetch(`${DETAILS_API}/locations?name_like=${query}`);
+  if (!res.ok) throw new Error("Failed to fetch locations");
+  return res.json();
+}
+
+export async function getBasicInfoByDepartment(deptName: string) {
+  const res = await fetch(
+    `${BASIC_INFO_API}/basicInfo?department=${encodeURIComponent(deptName)}`
+  );
+  if (!res.ok) throw new Error("Failed to fetch basic info by department");
+  return res.json();
+}
+
+export async function createBasicInfo(data: Partial<BasicInfo>) {
+  const res = await fetch(`${BASIC_INFO_API}/basicInfo`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  });
+
+  if (!res.ok) throw new Error("Failed to save basic info");
+  return res.json();
+}
+
+export async function createDetailInfo(data: Partial<DetailInfo>) {
+  const res = await fetch(`${DETAILS_API}/details`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  });
+
+  if (!res.ok) throw new Error("Failed to save details");
+  return res.json();
 }

@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import { Avatar } from "~/components/Avatar";
+import { Badge } from "~/components/Badge";
 import { Pagination } from "~/components/Pagination";
 import type { Employee } from "~/types/employee";
 
@@ -51,17 +52,7 @@ export function EmployeesView({
                 <td>{emp.department || "—"}</td>
                 <td>
                   {emp.role ? (
-                    <span
-                      className={`badge ${
-                        emp.role.toLowerCase() === "admin"
-                          ? "badge-admin"
-                          : emp.role.toLowerCase() === "ops"
-                            ? "badge-ops"
-                            : ""
-                      }`}
-                    >
-                      {emp.role}
-                    </span>
+                    <Badge variant={emp.role}>{emp.role}</Badge>
                   ) : (
                     "—"
                   )}

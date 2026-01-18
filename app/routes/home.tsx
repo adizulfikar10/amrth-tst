@@ -1,5 +1,5 @@
 import type { MetaFunction } from "react-router";
-import { Link } from "react-router";
+import { HomeView } from "~/views/HomeView";
 
 export const meta: MetaFunction = () => {
   return [
@@ -9,9 +9,5 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Home() {
-  return (
-    <div className="container">
-      <h1>Employee Management System</h1>
-    </div>
-  );
+  return <HomeView />;
 }
