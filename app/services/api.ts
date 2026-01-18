@@ -1,7 +1,7 @@
 import type { BasicInfo, DetailInfo, Employee } from "~/types/employee";
 
-const BASIC_INFO_API_URL = import.meta.env?.BASIC_INFO_API_URL;
-const DETAILS_API_URL = import.meta.env?.DETAILS_API_URL;
+const BASIC_INFO_API_URL = process.env.BASIC_INFO_API_URL;
+const DETAILS_API_URL = process.env.DETAILS_API_URL;
 
 const BASIC_INFO_API =
   BASIC_INFO_API_URL ||
