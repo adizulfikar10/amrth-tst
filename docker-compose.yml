@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 services:
   app:
     build: .
@@ -6,8 +6,8 @@ services:
       - "3000:3000"
     environment:
       - PORT=3000
-      - BASIC_INFO_API_INTERNAL=http://json-server-step1:4001
-      - DETAILS_API_INTERNAL=http://json-server-step2:4002
+      - BASIC_INFO_API_URL=http://json-server-step1:4001
+      - DETAILS_API_URL=http://json-server-step2:4002
     depends_on:
       - json-server-step1
       - json-server-step2

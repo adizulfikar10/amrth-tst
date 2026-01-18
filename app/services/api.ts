@@ -1,8 +1,20 @@
 import type { PaginatedResponse } from "~/types/api";
 import type { BasicInfo, DetailInfo, Employee } from "~/types/employee";
 
-const BASIC_INFO_API = "http://localhost:4001";
-const DETAILS_API = "http://localhost:4002";
+// @ts-ignore
+const isVercel = import.meta.env.VERCEL;
+
+const getEnv = (key: string) => {
+  if (typeof process !== "undefined" && process.env) {
+    return process.env[key];
+  }
+  return undefined;
+};
+
+const BASIC_INFO_API =
+  getEnv("BASIC_INFO_API_URL") || (isVercel ? "/api" : "http://localhost:4001");
+const DETAILS_API =
+  getEnv("DETAILS_API_URL") || (isVercel ? "/api" : "http://localhost:4002");
 
 
 export async function getEmployees(
