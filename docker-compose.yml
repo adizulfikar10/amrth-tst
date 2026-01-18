@@ -17,7 +17,7 @@ services:
     working_dir: /app
     volumes:
       - ./server:/app/server
-    command: npx json-server server/db-step1.json --port 4001 --host 0.0.0.0
+    command: npx json-server@0.17.4 server/db-step1.json --port 4001 --host 0.0.0.0
     ports:
       - "4001:4001"
 
@@ -26,6 +26,6 @@ services:
     working_dir: /app
     volumes:
       - ./server:/app/server
-    command: npx json-server server/db-step2.json --port 4002 --host 0.0.0.0
+    command: npx json-server@0.17.4 server/db-step2.json --port 4002 --host 0.0.0.0
     ports:
       - "4002:4002"
