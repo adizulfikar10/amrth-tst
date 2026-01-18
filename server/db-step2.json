@@ -173,6 +173,14 @@
       "employmentType": "Part-time",
       "location": "Depok",
       "notes": "Notes for employee 20"
+    },
+    {
+      "employeeId": "ENG-005",
+      "photo": "",
+      "employmentType": "Part-time",
+      "location": "Jakarta",
+      "notes": "notes",
+      "id": "mxW26VB"
     }
   ]
 }

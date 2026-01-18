@@ -1,8 +1,7 @@
-import type { PaginatedResponse } from "~/types/api";
 import type { BasicInfo, DetailInfo, Employee } from "~/types/employee";
 
 // @ts-ignore
-const isVercel = import.meta.env.VERCEL;
+const isVercel = import.meta.env?.VERCEL;
 
 const getEnv = (key: string) => {
   if (typeof process !== "undefined" && process.env) {
@@ -22,22 +21,20 @@ export async function getEmployees(
   limit: number = 5
 ): Promise<{ employees: Employee[]; total: number }> {
   const [basicRes, detailsRes] = await Promise.all([
-    fetch(`${BASIC_INFO_API}/basicInfo?_page=${page}&_per_page=${limit}`),
-    fetch(`${DETAILS_API}/details?_page=${page}&_per_page=${limit}`),
+    fetch(`${BASIC_INFO_API}/basicInfo?_page=${page}&_limit=${limit}`),
+    fetch(`${DETAILS_API}/details?_page=${page}&_limit=${limit}`),
   ]);
+
 
   if (!basicRes.ok || !detailsRes.ok) {
     throw new Error("Failed to fetch employees");
   }
 
-  const basicJson: PaginatedResponse<BasicInfo> = await basicRes.json();
-  const detailsJson: PaginatedResponse<DetailInfo> = await detailsRes.json();
+  const basicData: BasicInfo[] = await basicRes.json();
+  const detailsData: DetailInfo[] = await detailsRes.json();
 
-  const basicData = basicJson.data || [];
-  const detailsData = detailsJson.data || [];
-
-  const basicTotal = basicJson.items || 0;
-  const detailsTotal = detailsJson.items || 0;
+  const basicTotal = parseInt(basicRes.headers.get("X-Total-Count") || "0", 10);
+  const detailsTotal = parseInt(detailsRes.headers.get("X-Total-Count") || "0", 10);
   const total = Math.max(basicTotal, detailsTotal);
 
   const merged = new Map<string, Employee>();

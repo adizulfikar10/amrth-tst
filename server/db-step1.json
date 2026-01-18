@@ -177,6 +177,14 @@
       "department": "Lending",
       "role": "Admin",
       "employeeId": "LEN-020"
+    },
+    {
+      "fullName": "Budi Sudarsono",
+      "email": "superadmin@gmail.com",
+      "department": "Engineering",
+      "role": "Ops",
+      "employeeId": "ENG-005",
+      "id": "ENG-005"
     }
   ]
 }
